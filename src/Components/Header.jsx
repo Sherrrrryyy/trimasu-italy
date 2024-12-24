@@ -9,13 +9,16 @@ const Header = () => {
                 <nav>
                     <ul className="flex space-x-6">
                         <li>
-                            <Link to="/" className="text-gray-800 hover:text-blue-500">Home</Link>
+                            <Link to="/" className="text-gray-800 font-bold hover:text-blue-500">Home</Link>
                         </li>
                         <li>
-                            <Link to="/about" className="text-gray-800 hover:text-blue-500">About</Link>
+                            <Link to="/about" className="text-gray-800 font-bold hover:text-blue-500">About</Link>
                         </li>
                         <li>
-                            <Link to="/contact" className="text-gray-800 hover:text-blue-500">Contact</Link>
+                            <Link to="/contact" className="text-gray-800 font-bold  hover:text-blue-500">Contact</Link>
+                        </li>
+                        <li>
+                            <Link to="/auth/signup" className=" font-bold bg-blue-700 p-3 rounded-lg text-white">signup</Link>
                         </li>
                     </ul>
                 </nav>
