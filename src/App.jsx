@@ -9,6 +9,7 @@ import Header from './Components/Header'
 import Signup from './Auth/SignUp'
 import Index from './Auth/Index'
 import Login from './Auth/Login'
+import Books from './Book/Books'
 
 function App() {
 
@@ -26,8 +27,11 @@ function App() {
             <Route index element={<Index />} />
             <Route path='signup' element={<Signup />} />
             <Route path='login' element={<Login />} />
-
           </Route>
+<Route path='/books'>
+<Route index element={<Books />} />
+
+</Route>
 
         </Routes>
       </BrowserRouter>
