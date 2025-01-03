@@ -1,4 +1,5 @@
 import React from 'react'
+import BookCover from '../assets/BookCover.jpg'
 
 const Home = () => {
   return (
@@ -30,31 +31,24 @@ const Home = () => {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Book Cover"
-              className="w-full rounded mb-4"
-            />
-            <h4 className="text-lg font-bold text-gray-800 mb-2">Parizaad</h4>
+           
+            <h4 className="text-lg font-bold text-gray-800 mb-2">Fiction</h4>
             <p className="text-gray-600 text-sm">An amazing journey of discovery and adventure.</p>
+            <button className='p-2 text-white bg-blue-500 rounded-lg mt-2'>Explore Fiction</button>
           </div>
           <div className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Book Cover"
-              className="w-full rounded mb-4"
-            />
-            <h4 className="text-lg font-bold text-gray-800 mb-2">Peer-e-Kaamil</h4>
+           
+            <h4 className="text-lg font-bold text-gray-800 mb-2">Non-Fiction</h4>
             <p className="text-gray-600 text-sm">A gripping tale of love, loss, and resilience.</p>
+            <button className='p-2 text-white bg-blue-500 rounded-lg mt-2'>Explore Non-Fiction</button>
+
           </div>
           <div className="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Book Cover"
-              className="w-full rounded mb-4"
-            />
-            <h4 className="text-lg font-bold text-gray-800 mb-2">Pushpa</h4>
-            <p className="text-gray-600 text-sm">Unlock the secrets of the universe in this thrilling read.</p>
+            
+            <h4 className="text-lg font-bold text-gray-800 mb-2">Fiction</h4>
+            <p className="text-gray-600 text-sm">Unlock the secrets of the universe in this thrilling.</p>
+            <button className='p-2 text-white bg-blue-500 rounded-lg mt-2'>Explore Fiction</button>
+          
           </div>
         </div>
       </div>

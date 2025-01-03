@@ -6,10 +6,11 @@ import Contact from './pages/Contact'
 import About from './pages/About'
 import NotFound from './pages/NotFound'
 import Header from './Components/Header'
-import Signup from './Auth/SignUp'
+import Signup from './Auth/Signup'
 import Index from './Auth/Index'
 import Login from './Auth/Login'
 import Books from './Book/Books'
+import Footer from './Components/Footer'
 
 function App() {
 
@@ -23,17 +24,18 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/notfound' element={<NotFound />} />
 
-          <Route path='/auth'>
-            <Route index element={<Index />} />
+          <Route path='/book'>
+            <Route index element={<Books />} />
             <Route path='signup' element={<Signup />} />
             <Route path='login' element={<Login />} />
           </Route>
-<Route path='/books'>
-<Route index element={<Books />} />
+          {/* <Route path='/books'>
+            <Route index element={<Books />} />
 
-</Route>
+          </Route> */}
 
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   )

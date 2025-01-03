@@ -18,7 +18,7 @@ const Header = () => {
                             <Link to="/contact" className="text-gray-800 font-bold  hover:text-blue-500">Contact</Link>
                         </li>
                         <li>
-                            <Link to="/auth/signup" className=" font-bold bg-blue-700 p-3 rounded-lg text-white">signup</Link>
+                            <Link to="/auth/signup" className=" font-bold bg-blue-500 hover:bg-blue-400 p-3 text-white">SIGNUP</Link>
                         </li>
                     </ul>
                 </nav>
