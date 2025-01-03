@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { ThemeContext } from '../context/ThemeContext'
 
 const Header = () => {
+
+const {theme, setTheme} = useContext(ThemeContext)
+
+
     return (
-        <header className="bg-white shadow-md">
+        <header className={`${theme === "light" ? "bg-gray-600 text-white"  : "bg-white text-gray-800"} shadow-md`}>
             <div className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
                 <h1 className="text-3xl font-bold text-gray-800">Book Haven</h1>
                 <nav>
@@ -18,8 +23,11 @@ const Header = () => {
                             <Link to="/contact" className="text-gray-800 font-bold  hover:text-blue-500">Contact</Link>
                         </li>
                         <li>
-                            <Link to="/auth/signup" className=" font-bold bg-blue-500 hover:bg-blue-400 p-3 text-white">SIGNUP</Link>
+                            <Link to="/auth/signup" className="font-bold bg-blue-500 hover:bg-blue-400 p-3 text-white">SIGNUP</Link>
                         </li>
+                    <button
+                    onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+                    className={`${theme === 'light' ? 'Dark' : 'Light'}`}>Dark</button>
                     </ul>
                 </nav>
             </div>
