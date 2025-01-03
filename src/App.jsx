@@ -11,6 +11,7 @@ import Index from './Auth/Index'
 import Login from './Auth/Login'
 import Books from './Book/Books'
 import Footer from './Components/Footer'
+import BooksDetail from './Book/BooksDetails'
 
 function App() {
 
@@ -24,15 +25,16 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/notfound' element={<NotFound />} />
 
-          <Route path='/book'>
-            <Route index element={<Books />} />
+          <Route path='/auth'>
+            <Route index element={<Index />} />
             <Route path='signup' element={<Signup />} />
             <Route path='login' element={<Login />} />
           </Route>
-          {/* <Route path='/books'>
+          <Route path='/books'>
             <Route index element={<Books />} />
+            <Route path=':title' element={<BooksDetail />} />
 
-          </Route> */}
+          </Route>
 
         </Routes>
         <Footer />
