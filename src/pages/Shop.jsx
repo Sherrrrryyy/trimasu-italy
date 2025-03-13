@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Navbar from "../components/Navbar.jsx"
 
 export default function SimpleShopPage() {
   // State for quick view modal
@@ -89,7 +88,6 @@ export default function SimpleShopPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-pink-50/30">
-      <Navbar />
 
       {/* Shop Banner */}
       <div className="bg-gradient-to-r from-pink-500 to-purple-600 text-white py-16 mt-16">
