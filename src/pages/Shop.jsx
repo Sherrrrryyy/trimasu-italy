@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-export default function SimpleShopPage() {
+export default function ShopPage() {
   // State for quick view modal
   const [quickViewProduct, setQuickViewProduct] = useState(null)
 
