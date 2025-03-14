@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { IceCreamCone, ShoppingCart, Menu, X } from "lucide-react"
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -45,9 +46,6 @@ export default function Navbar() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="/" className="flex items-center space-x-2">
-              {/* <div className="bg-gradient-to-r from-pink-500 to-purple-500 rounded-full p-2">
-                <IceCreamCone className="h-5 w-5 text-white" />
-              </div> */}
               <span className="text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
                 Trimasu
               </span>
@@ -69,12 +67,12 @@ export default function Navbar() {
             {/* Cart Icon & Mobile Menu Button */}
             <div className="flex items-center space-x-4">
               {/* Cart Button */}
-              <button className="relative p-2">
+              <Link to="/cart" className="relative p-2"> {/* Updated to Link */}
                 <ShoppingCart className="h-6 w-6 text-slate-800 hover:text-pink-500 transition-colors" />
                 <span className="absolute -top-1 -right-1 bg-pink-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
                   3
                 </span>
-              </button>
+              </Link>
 
               {/* Mobile Menu Button */}
               <button className="md:hidden p-2" onClick={() => setIsMobileMenuOpen(true)} aria-label="Open menu">
@@ -137,8 +135,8 @@ export default function Navbar() {
 
             {/* Cart link at bottom */}
             <div className="mt-auto border-t">
-              <a
-                href="/cart"
+              <Link
+                to="/cart" // Updated to Link
                 className="flex items-center justify-between px-6 py-4 text-slate-800 hover:bg-pink-50"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -149,7 +147,7 @@ export default function Navbar() {
                 <span className="bg-pink-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
                   3
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -157,4 +155,3 @@ export default function Navbar() {
     </>
   )
 }
-

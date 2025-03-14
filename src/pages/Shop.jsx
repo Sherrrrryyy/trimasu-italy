@@ -1,6 +1,8 @@
 "use client"
 
 import { useState } from "react"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 
 export default function ShopPage() {
   // State for quick view modal
@@ -88,9 +90,9 @@ export default function ShopPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-pink-50/30">
-
+<Navbar />
       {/* Shop Banner */}
-      <div className="bg-gradient-to-r from-pink-500 to-purple-600 text-white py-16 mt-16">
+      <div className="bg-gradient-to-r from-pink-500 to-purple-600 text-white py-16 mb-10 mt-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Gelato Shop</h1>
           <p className="text-lg max-w-2xl mx-auto">
@@ -238,7 +240,7 @@ export default function ShopPage() {
           </div>
         </div>
       )}
-
+<Footer />
     </div>
   )
 }
