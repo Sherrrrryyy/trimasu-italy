@@ -45,11 +45,11 @@ export default function Navbar() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <span className="text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
                 Trimasu
               </span>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
@@ -67,7 +67,7 @@ export default function Navbar() {
             {/* Cart Icon & Mobile Menu Button */}
             <div className="flex items-center space-x-4">
               {/* Cart Button */}
-              <Link to="/cart" className="relative p-2"> {/* Updated to Link */}
+              <Link to="/cart" className="relative p-2">
                 <ShoppingCart className="h-6 w-6 text-slate-800 hover:text-pink-500 transition-colors" />
                 <span className="absolute -top-1 -right-1 bg-pink-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
                   3
@@ -110,33 +110,33 @@ export default function Navbar() {
 
             {/* Menu items */}
             <div className="flex flex-col py-4">
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="px-6 py-3 text-slate-800 hover:bg-pink-50 hover:text-pink-500"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
-              </a>
-              <a
-                href="/shop"
+              </Link>
+              <Link
+                to="/shop"
                 className="px-6 py-3 text-slate-800 hover:bg-pink-50 hover:text-pink-500"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Shop
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="px-6 py-3 text-slate-800 hover:bg-pink-50 hover:text-pink-500"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
-              </a>
+              </Link>
             </div>
 
             {/* Cart link at bottom */}
             <div className="mt-auto border-t">
               <Link
-                to="/cart" // Updated to Link
+                to="/cart"
                 className="flex items-center justify-between px-6 py-4 text-slate-800 hover:bg-pink-50"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
