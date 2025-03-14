@@ -2,8 +2,7 @@
 
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import Navbar from "../components/Navbar" // Updated to remove .jsx extension
-
+import Navbar from "../components/Navbar.jsx" // Reverted to include .jsx extension
 import Footer from "../components/Footer.jsx"
 
 export default function CheckoutPage() {
