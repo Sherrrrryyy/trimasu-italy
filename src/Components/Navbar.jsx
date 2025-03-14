@@ -53,13 +53,13 @@ export default function Navbar() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
-              <Link href="/" className="text-slate-800 hover:text-pink-500 font-medium transition-colors">
+              <Link to="/" className="text-slate-800 hover:text-pink-500 font-medium transition-colors">
                 Home
               </Link>
-              <Link href="/shop" className="text-slate-800 hover:text-pink-500 font-medium transition-colors">
+              <Link to="/shop" className="text-slate-800 hover:text-pink-500 font-medium transition-colors">
                 Shop
               </Link>
-              <Link href="/contact" className="text-slate-800 hover:text-pink-500 font-medium transition-colors">
+              <Link to="/contact" className="text-slate-800 hover:text-pink-500 font-medium transition-colors">
                 Contact
               </Link>
             </div>
