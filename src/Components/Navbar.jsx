@@ -53,15 +53,15 @@ export default function Navbar() {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
-              <a href="/" className="text-slate-800 hover:text-pink-500 font-medium transition-colors">
+              <Link href="/" className="text-slate-800 hover:text-pink-500 font-medium transition-colors">
                 Home
-              </a>
-              <a href="/shop" className="text-slate-800 hover:text-pink-500 font-medium transition-colors">
+              </Link>
+              <Link href="/shop" className="text-slate-800 hover:text-pink-500 font-medium transition-colors">
                 Shop
-              </a>
-              <a href="/contact" className="text-slate-800 hover:text-pink-500 font-medium transition-colors">
+              </Link>
+              <Link href="/contact" className="text-slate-800 hover:text-pink-500 font-medium transition-colors">
                 Contact
-              </a>
+              </Link>
             </div>
 
             {/* Cart Icon & Mobile Menu Button */}
