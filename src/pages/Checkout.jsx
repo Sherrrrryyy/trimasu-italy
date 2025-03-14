@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
+import Navbar from "../components/Navbar.jsx"
+import Footer from "../components/Footer.jsx"
 
 export default function CheckoutPage() {
   // Form state
